@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+}
+
+input.search-query {
+    background-color:black;
+    color:white;
+}
+
+input{
+    height: 40px;
+    width: 500px;
+    border: black;
+    font-size: 20px;
+}
+
+h2{
+    /*text-align: center;*/
+    color: cyan;
+}
+
+input:focus{
+    border-bottom: 2px solid red;
+    -webkit-transition-duration: 0.5s;
+    -webkit-transform-origin: 20%;
+    outline: none;
+}
+
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color:red;
+    transition: 0.5s;
+}
