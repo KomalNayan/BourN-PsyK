@@ -38,3 +38,7 @@ a:hover{
     color:red;
     transition: 0.5s;
 }
+
+td{
+    text-align: center;
+}
