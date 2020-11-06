@@ -11,8 +11,6 @@ input.search-query {
 
 input{
     border: black;
-    margin-right:5%;
-    font-size: 4%;
 }
 
 h2{
@@ -66,4 +64,5 @@ table,tr{
 #search{
     max-width: 50%;
     margin: 5%;
+    display: inline;
 }
