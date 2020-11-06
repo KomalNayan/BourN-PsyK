@@ -58,9 +58,6 @@ table,tr{
     width: 100%;
 }
 
-tr{
-    display: flex;
-}
 
 #login,#register{
     width: 12.5%;
