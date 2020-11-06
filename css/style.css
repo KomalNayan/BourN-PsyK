@@ -42,3 +42,12 @@ a:hover{
 td{
     text-align: center;
 }
+
+header{
+    display: inline;
+    max-width: 100%;
+}
+
+img{
+    max-width: 25%;
+}
