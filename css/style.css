@@ -40,7 +40,7 @@ a:hover{
 
 td{
     text-align: center;
-    margin: 20%;
+    padding-right: 40px;
 }
 
 header{
@@ -54,12 +54,90 @@ header{
     margin-right: 5%;
 }
 
-table,tr{
-    width: 100%;
-}
-
-
-#login,#register{
-    width: 12.5%;
+div.gallery {
+    margin: 10px;
+    float: left;
+    width: 180px;
+    display: inline;
+  }
+  
+  div.gallery:hover {
+    color:black;
+    transition-duration: 0.4s;
+    background-color: red;
+    border-radius: 4px;
+    font-size: small;
+  }
+  
+  div.gallery img {
+    width: 90%;
+    height: auto;
     margin: 5%;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+
+  .container{
+      display: grid  ;
+  }
+
+  .content{
+      display: inline;
+  }
+
+td a:hover{
+color: lime;
 }
+
+#mySidenav a {
+    position: absolute; 
+    right: -140px; 
+    transition: 0.3s; 
+    padding: 15px; 
+    width: 130px; 
+    text-decoration: none; 
+    font-size: 15px;
+    color: white; 
+    border-radius: 5px 0 0 5px; 
+    font-family: arial;
+    text-align: center;
+  }
+  
+  #mySidenav a:hover {
+    right: 0; 
+  }
+  
+  
+  #side1 {
+    top: 120px;
+    background-color: #4CAF50;
+  }
+  
+  #side2 {
+    top: 180px;
+    background-color: #2196F3; 
+  }
+  
+  #side3 {
+    top: 240px;
+    background-color: #f44336; 
+  }
+  
+  #side4 {
+    top: 300px;
+    background-color: r 
+  }
+
+  #side5 {
+    top: 360px;
+    background-color:magenta; 
+  }
+  
+  #side6 {
+    top: 420px;
+    background-color: rgb(3, 104, 87); 
+  }
+

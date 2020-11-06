@@ -12,62 +12,184 @@
     <body>
         <header id="top">
                 <a href="index.html"><img src="./images/bourn psyk logo.JPEG" id="logo"></a>
-             <i class="fa fa-search" color="white"></i>&nbsp;&nbsp;<input type="text" class="search-query" placeholder="Search" />
+             <i class="fa fa-search" color="white"></i>&nbsp;&nbsp;<input type="text" class="search-query" placeholder="Search" id="search" />
                <div id = "login"> <a href="login.html">Login</a></div>
                <div id = "register"><a href="register.html">Register</a></div>
         </header>
-
+        <nav>
+            <div id="mySidenav" class="sidenav">
+                <a href="#search" id="side1">Search</a>
+                <a href="#latest" id="side2">Latest Releases</a>
+                <a href="#trending" id="side3">Trending</a>
+                <a href="#friends" id="side4">Friends' Playlist</a>
+                <a href="AboutUs.html" id="side5">About Us</a>
+                <a href="#footer" id="side6">Contact Us</a>
+              </div>
+        </nav>
         <main>
-            <h2 id="latest">Latest Releases</h2>
-            <table>
-             <tr>
-                 <td><a href="https://youtu.be/KId6eunoiWk"><img src="./images/crossing field.jpg" height="150" width="150"><br>LiSA - Crossing Field</a></td>
-                 <td><a href="https://youtu.be/dlFA0Zq1k2A"><img src="./images/silhouette.jpg" height="150" width="150"><br>KANA-BOON - Silhouette</a></td>
-                 <td><a href="https://youtu.be/LsoLEjrDogU"><img src="./images/Finesse.png" height="150" width="150"><br>Bruno Mars - Finesse</a></td>
-                 <td><a href="https://youtu.be/qFkNATtc3mc"><img src="./images/Ghungroo.jpg" height="150" width="150"><br>WAR - Ghungroo</a></td>
-                 <td><a href="https://youtu.be/kJQP7kiw5Fk"><img src="./images/Despacito.jpg" height="150" width="150"><br>Luis Fonsi - DESPACITO</a></td>
-                 <td><a href="https://youtu.be/O669LKM6XDQ"><img src="./images/Win.jpg" height="150" width="150"><br>CIX - Win</a></td>
-                 <td><a href="https://youtu.be/LsoLEjrDogU"><img src="./images/Finesse.png" height="150" width="150"><br>Bruno Mars - Finesse</a></td>
-                 <td><a href="https://youtu.be/7C2z4GqqS5E"><img src="./images/FakeLove.jpg" height="150" width="150"><br>BTS - FAKE LOVE</a></td>
-             </tr>   
-            </table>
-            <h2 id="trending">Trending</h2>
-            <table>
-                <tr>
-                    <td><a href="https://youtu.be/LsoLEjrDogU"><img src="./images/Finesse.png" height="150" width="150"><br>Bruno Mars - Finesse</a></td>
-                    <td><a href="https://youtu.be/KId6eunoiWk"><img src="./images/crossing field.jpg" height="150" width="150"><br>LiSA - Crossing Field</a></td>
-                    <td><a href="https://youtu.be/dlFA0Zq1k2A"><img src="./images/silhouette.jpg" height="150" width="150"><br>KANA-BOON - Silhouette</a></td>
-                    <td><a href="https://youtu.be/O669LKM6XDQ"><img src="./images/Win.jpg" height="150" width="150"><br>CIX - Win</a></td>
-                    <td><a href="https://youtu.be/LsoLEjrDogU"><img src="./images/Finesse.png" height="150" width="150"><br>Bruno Mars - Finesse</a></td>
-                    <td><a href="https://youtu.be/7C2z4GqqS5E"><img src="./images/FakeLove.jpg" height="150" width="150"><br>BTS - FAKE LOVE</a></td>
-                    <td><a href="https://youtu.be/qFkNATtc3mc"><img src="./images/Ghungroo.jpg" height="150" width="150"><br>WAR - Ghungroo</a></td>
-                    <td><a href="https://youtu.be/kJQP7kiw5Fk"><img src="./images/Despacito.jpg" height="150" width="150"><br>Luis Fonsi - DESPACITO</a></td>
-                    
-                </tr>   
-               </table>
-            <h2 id="friends">Your Friends are watching</h2>
-            <table>
-                <tr>
-                    <td><a href="https://youtu.be/qFkNATtc3mc"><img src="./images/Ghungroo.jpg" height="150" width="150"><br>WAR - Ghungroo</a></td>
-                    <td><a href="https://youtu.be/kJQP7kiw5Fk"><img src="./images/Despacito.jpg" height="150" width="150"><br>Luis Fonsi - DESPACITO</a></td>
-                    <td><a href="https://youtu.be/7C2z4GqqS5E"><img src="./images/FakeLove.jpg" height="150" width="150"><br>BTS - FAKE LOVE</a></td>
-                    <td><a href="https://youtu.be/dlFA0Zq1k2A"><img src="./images/silhouette.jpg" height="150" width="150"><br>KANA-BOON - Silhouette</a></td>
-                    <td><a href="https://youtu.be/LsoLEjrDogU"><img src="./images/Finesse.png" height="150" width="150"><br>Bruno Mars - Finesse</a></td>
-                    <td><a href="https://youtu.be/O669LKM6XDQ"><img src="./images/Win.jpg" height="150" width="150"><br>CIX - Win</a></td>
-                    <td><a href="https://youtu.be/KId6eunoiWk"><img src="./images/crossing field.jpg" height="150" width="150"><br>LiSA - Crossing Field</a></td>
-                    <td><a href="https://youtu.be/LsoLEjrDogU"><img src="./images/Finesse.png" height="150" width="150"><br>Bruno Mars - Finesse</a></td>
-                </tr>   
-               </table>
+            <div id="latest" class="container">
+                <div class="category">
+                    <h2>Latest Releases</h2>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/kJQP7kiw5Fk">
+                        <img src="./images/Despacito.jpg" alt="Despacito" width="150" height="150">
+                        </a>
+                    <div class="desc">Luis Fonsi - DESPACITO</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/dlFA0Zq1k2A">
+                        <img src="./images/silhouette.jpg" alt="Silhouette" width="150" height="150">
+                        </a>
+                        <div class="desc">KANA-BOON - Silhouette</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/LsoLEjrDogU">
+                        <img src="./images/Finesse.png" alt="Finesse" width="150" height="150">
+                        </a>
+                        <div class="desc">Bruno Mars - FINESSE</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/O669LKM6XDQ">
+                        <img src="./images/Win.jpg" alt="Win" width="150" height="150">
+                        </a>
+                        <div class="desc">Cix - WIN</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/KId6eunoiWk">
+                        <img src="./images/crossing field.jpg" alt="Crossing Field" width="150" height="150">
+                        </a>
+                        <div class="desc">LiSA - Crossing Field</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/7C2z4GqqS5E">
+                        <img src="./images/FakeLove.jpg" alt="FAKE LOVE" width="150" height="150">
+                        </a>
+                        <div class="desc">BTS - FAKE LOVE</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/qFkNATtc3mc">
+                        <img src="./images/Ghungroo.jpg" alt="Ghungroo" width="150" height="150">
+                        </a>
+                        <div class="desc">WAR - Ghungroo</div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="trending" class="container">
+                <div class="category">
+                    <h2>Trending</h2>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/LsoLEjrDogU">
+                        <img src="./images/Finesse.png" alt="Finesse" width="150" height="150">
+                        </a>
+                        <div class="desc">Bruno Mars - FINESSE</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/KId6eunoiWk">
+                        <img src="./images/crossing field.jpg" alt="Crossing Field" width="150" height="150">
+                        </a>
+                        <div class="desc">LiSA - Crossing Field</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/qFkNATtc3mc">
+                        <img src="./images/Ghungroo.jpg" alt="Ghungroo" width="150" height="150">
+                        </a>
+                        <div class="desc">WAR - Ghungroo</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/O669LKM6XDQ">
+                        <img src="./images/Win.jpg" alt="Win" width="150" height="150">
+                        </a>
+                        <div class="desc">Cix - WIN</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/7C2z4GqqS5E">
+                        <img src="./images/FakeLove.jpg" alt="FAKE LOVE" width="150" height="150">
+                        </a>
+                        <div class="desc">BTS - FAKE LOVE</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/kJQP7kiw5Fk">
+                        <img src="./images/Despacito.jpg" alt="Despacito" width="150" height="150">
+                        </a>
+                    <div class="desc">Luis Fonsi - DESPACITO</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/dlFA0Zq1k2A">
+                        <img src="./images/silhouette.jpg" alt="Silhouette" width="150" height="150">
+                        </a>
+                        <div class="desc">KANA-BOON - Silhouette</div>
+                    </div>
+                </div>
+            </div>   
+              
+
+           
+            <div id="friends" class="container">
+                <div class="category">
+                    <h2>Your Friends are Watching..</h2>
+                </div>
+                <div class="content">
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/qFkNATtc3mc">
+                        <img src="./images/Ghungroo.jpg" alt="Ghungroo" width="150" height="150">
+                        </a>
+                        <div class="desc">WAR - Ghungroo</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/kJQP7kiw5Fk">
+                        <img src="./images/Despacito.jpg" alt="Despacito" width="150" height="150">
+                        </a>
+                    <div class="desc">Luis Fonsi - DESPACITO</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/7C2z4GqqS5E">
+                        <img src="./images/FakeLove.jpg" alt="FAKE LOVE" width="150" height="150">
+                        </a>
+                        <div class="desc">BTS - FAKE LOVE</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/dlFA0Zq1k2A">
+                        <img src="./images/silhouette.jpg" alt="Silhouette" width="150" height="150">
+                        </a>
+                        <div class="desc">KANA-BOON - Silhouette</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/KId6eunoiWk">
+                        <img src="./images/crossing field.jpg" alt="Crossing Field" width="150" height="150">
+                        </a>
+                        <div class="desc">LiSA - Crossing Field</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/LsoLEjrDogU">
+                        <img src="./images/Finesse.png" alt="Finesse" width="150" height="150">
+                        </a>
+                        <div class="desc">Bruno Mars - FINESSE</div>
+                    </div>
+                    <div class="gallery">
+                        <a target="_blank" href="https://youtu.be/O669LKM6XDQ">
+                        <img src="./images/Win.jpg" alt="Win" width="150" height="150">
+                        </a>
+                        <div class="desc">Cix - WIN</div>
+                    </div>
+                </div>
+            </div>
+
         </main>
 
-        <footer>
+        <footer id="footer">
             <p>
                 <a href="#top">To Top&nbsp;<i class="fa fa-arrow-up" aria-hidden="true" color="red"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#latest">Latest&nbsp;<i class="fa fa-thumbs-up" aria-hidden="true" color="orange"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#trending">Trending&nbsp;<i class="fa fa-fire" aria-hidden="true" color="yellow"></i></a> &nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="#friends">Friends&nbsp;<i class="fa fa-users" aria-hidden="true" color="aqua"></i></a>
             </p>
-            <table cellspacing="40">
+            <table>
                 <tr>
                     <td>Follow Us On:</td>
                     <td><a href="https://www.instagram.com/saiyan_nayan/" target="_blank"><i class="fa fa-instagram fa-2x" aria-hidden="true" color="white"></i></a></td>
