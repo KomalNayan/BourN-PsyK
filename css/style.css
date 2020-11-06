@@ -52,6 +52,7 @@ header{
 #logo{
     max-width: 25%;
     margin-right: 5%;
+    display: inline;
 }
 
 table{
@@ -61,8 +62,11 @@ table{
 #login,#register{
     max-width: 12.5%;
     margin: 5%;
+    display: inline;
 }
 
 #search{
     max-width: 50%;
+    margin: 5%;
+    display: inline;
 }
