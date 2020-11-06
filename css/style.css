@@ -13,7 +13,7 @@ input{
     max-width: 90%;
     border: black;
     margin-right:5%;
-    font-size: 10%;
+    font-size: 4%;
 }
 
 h2{
@@ -60,7 +60,7 @@ table{
 
 #login,#register{
     max-width: 12.5%;
-    margin: 4%;
+    margin: 5%;
 }
 
 #search{
