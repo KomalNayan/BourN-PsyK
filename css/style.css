@@ -10,10 +10,9 @@ input.search-query {
 }
 
 input{
-    height: 40px;
     max-width: 50%;
     border: black;
-    margin: 4%;
+    margin-right:5%;
     font-size: 20%;
 }
 
@@ -52,5 +51,5 @@ header{
 #logo{
     max-width: 25%;
     margin-right: 5%;
-    margin-top: 14%;
+    margin-top: 5%;
 }
