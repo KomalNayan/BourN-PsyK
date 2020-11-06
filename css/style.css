@@ -48,6 +48,6 @@ header{
     max-width: 100%;
 }
 
-img{
-    width: 25%;
+#logo{
+    max-width: 25%;
 }
