@@ -53,16 +53,10 @@ header{
 }
 
 table,tr{
-    max-width: 100%;
+    width: 100%;
 }
 
 #login,#register{
     max-width: 12.5%;
     margin: 5%;
-}
-
-#search{
-    max-width: 50%;
-    margin: 5%;
-    display: inline;
 }
