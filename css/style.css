@@ -41,11 +41,11 @@ a:hover{
 
 td{
     text-align: center;
-    border-spacing: 5%;
+    margin: 4%;
 }
 
 header{
-    display: inline;
+    display: inline-block;
     max-width: 100%;
 }
 
