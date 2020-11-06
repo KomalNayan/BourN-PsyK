@@ -10,10 +10,10 @@ input.search-query {
 }
 
 input{
-    max-width: 50%;
+    max-width: 90%;
     border: black;
     margin-right:5%;
-    font-size: 40px;
+    font-size: 10%;
 }
 
 h2{
@@ -52,9 +52,17 @@ header{
 #logo{
     max-width: 25%;
     margin-right: 5%;
-    margin-top: 5%;
 }
 
 table{
     max-width: 100%;
+}
+
+#login,#register{
+    max-width: 12.5%;
+    margin: 4%;
+}
+
+#search{
+    max-width: 50%;
 }
