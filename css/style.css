@@ -59,7 +59,7 @@ table,tr{
 }
 
 tr{
-    display: inline-block;
+    display: flex;
 }
 
 #login,#register{
