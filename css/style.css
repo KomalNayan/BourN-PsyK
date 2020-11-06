@@ -58,6 +58,10 @@ table,tr{
     width: 100%;
 }
 
+tr{
+    display: inline-block;
+}
+
 #login,#register{
     width: 12.5%;
     margin: 5%;
