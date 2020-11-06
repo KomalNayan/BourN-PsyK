@@ -13,6 +13,7 @@ input{
     height: 40px;
     max-width: 50%;
     border: black;
+    margin: 4%;
 }
 
 h2{
@@ -49,4 +50,6 @@ header{
 
 #logo{
     max-width: 25%;
+    margin-right: 5%;
+    margin-top: 5%;
 }
