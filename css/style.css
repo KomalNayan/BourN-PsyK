@@ -13,7 +13,7 @@ input{
     max-width: 50%;
     border: black;
     margin-right:5%;
-    font-size: 20%;
+    font-size: 40px;
 }
 
 h2{
@@ -41,6 +41,7 @@ a:hover{
 
 td{
     text-align: center;
+    border-spacing: 5%;
 }
 
 header{
@@ -52,4 +53,8 @@ header{
     max-width: 25%;
     margin-right: 5%;
     margin-top: 5%;
+}
+
+table{
+    max-width: 100%;
 }
