@@ -1,143 +1,161 @@
 body{
-    background-color: black;
-    color: white;
-    font-family: Arial;
+  background-color: black;
+  color: white;
+  font-family: Arial;
 }
 
 input.search-query {
-    background-color:black;
-    color:white;
-    width: 50%;
-    margin: 5%;
+  background-color:black;
+  color:white;
+  width: 50%;
+  margin: 5%;
 }
 
 input{
-    border: black;
+  border: black;
 }
 
 h2{
-    /*text-align: center;*/
-    color: cyan;
+  /*text-align: center;*/
+  color: cyan;
 }
 
 input:focus{
-    border-bottom: 2px solid red;
-    -webkit-transition-duration: 0.5s;
-    -webkit-transform-origin: 20%;
-    outline: none;
+  border-bottom: 2px solid red;
+  -webkit-transition-duration: 0.5s;
+  -webkit-transform-origin: 20%;
+  outline: none;
 }
 
 
 a{
-    text-decoration: none;
-    color:white;
+  text-decoration: none;
+  color:white;
 }
 
 a:hover{
-    color:red;
-    transition: 0.5s;
+  color:red;
+  transition: 0.5s;
 }
 
 td{
-    text-align: center;
-    padding-right: 40px;
+  text-align: center;
+  padding-right: 40px;
 }
 
 header{
-    display: flex;
-    align-items: center;
-    max-width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #logo{
-    width: 25%;
-    margin-right: 5%;
+  width: 400px;
+  height: 130px;
+  margin-right: 70px;
+}
+
+#login{
+  float: left;
+  padding: 15px;
+  margin-left: 110px ;
+}
+
+#register{
+float: left;
+padding: 15px;
+margin-left: auto;
+display: inline-flex;
+
+}
+
+#reg:hover{
+color: red;
+text-decoration: dotted underline;
 }
 
 div.gallery {
-    margin: 10px;
-    float: left;
-    width: 180px;
+  margin: 10px;
+  float: left;
+  width: 180px;
+  display: inline;
+}
+
+div.gallery:hover {
+  color:black;
+  transition-duration: 0.4s;
+  background-color: red;
+  border-radius: 4px;
+  font-size: small;
+}
+
+div.gallery img {
+  width: 90%;
+  height: auto;
+  margin: 5%;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.container{
+    display: grid  ;
+}
+
+.content{
     display: inline;
-  }
-  
-  div.gallery:hover {
-    color:black;
-    transition-duration: 0.4s;
-    background-color: red;
-    border-radius: 4px;
-    font-size: small;
-  }
-  
-  div.gallery img {
-    width: 90%;
-    height: auto;
-    margin: 5%;
-  }
-  
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
-
-  .container{
-      display: grid  ;
-  }
-
-  .content{
-      display: inline;
-  }
+}
 
 td a:hover{
 color: lime;
 }
 
 #mySidenav a {
-    position: absolute; 
-    right: -140px; 
-    transition: 0.3s; 
-    padding: 15px; 
-    width: 130px; 
-    text-decoration: none; 
-    font-size: 15px;
-    color: white; 
-    border-radius: 5px 0 0 5px; 
-    font-family: arial;
-    text-align: center;
-  }
-  
-  #mySidenav a:hover {
-    right: 0; 
-  }
-  
-  
-  #side1 {
-    top: 120px;
-    background-color: #4CAF50;
-  }
-  
-  #side2 {
-    top: 180px;
-    background-color: #2196F3; 
-  }
-  
-  #side3 {
-    top: 240px;
-    background-color: #f44336; 
-  }
-  
-  #side4 {
-    top: 300px;
-    background-color: #974BFF; 
-  }
+  position: absolute; 
+  right: -140px; 
+  transition: 0.3s; 
+  padding: 15px; 
+  width: 130px; 
+  text-decoration: none; 
+  font-size: 15px;
+  color: white; 
+  border-radius: 5px 0 0 5px; 
+  font-family: arial;
+  text-align: center;
+}
 
-  #side5 {
-    top: 360px;
-    background-color:magenta; 
-  }
-  
-  #side6 {
-    top: 420px;
-    background-color: #FFAA4B; 
-  }
+#mySidenav a:hover {
+  right: 0; 
+}
 
+
+#side1 {
+  top: 120px;
+  background-color: #4CAF50;
+}
+
+#side2 {
+  top: 180px;
+  background-color: #2196F3; 
+}
+
+#side3 {
+  top: 240px;
+  background-color: #f44336; 
+}
+
+#side4 {
+  top: 300px;
+  background-color: #974BFF; 
+}
+
+#side5 {
+  top: 360px;
+  background-color:magenta; 
+}
+
+#side6 {
+  top: 420px;
+  background-color: #FFAA4B; 
+}
