@@ -2,14 +2,16 @@ body{
   background-color: black;
   color: white;
   font-family: Arial;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 input.search-query {
   background-color:black;
   color:white;
-  width: 600px;
+  /*width: 600px;*/
   margin: 10px;
-  font-size: 23px;
+  font-size: 22px;
 }
 
 input{
@@ -44,41 +46,46 @@ td{
   padding-right: 40px;
 }
 
-header{
-  display: flex;
+.header{
+  display: grid;
+  grid-template-columns: 1fr 3fr 0.25fr 0.75fr;
+  column-gap: 40px ;
   align-items: center;
 }
 
-#logo{
-  width: 400px;
-  height: 130px;
-  margin-right: 70px;
+.logo img{
+  width: 100% ;
+  height: auto;
 }
 
-#login{
+.login{
   float: left;
-  padding: 15px;
-  margin-left: 110px ;
+  
 }
 
-#register{
+.searchbar{
+  display: inline-flex;
+  align-items: center;
+}
+.searchbar i{
+  width: 5%;
+}
+
+.searchbar input{
+  width: 90%;
+}
+
+.register{
 float: left;
-padding: 15px;
-margin-left: auto;
-display: inline-flex;
+display: inline;
 
 }
 
-#reg:hover{
-color: red;
-text-decoration: dotted underline;
-}
 
 div.gallery {
   margin: 10px;
   float: left;
   width: 180px;
-  display: inline;
 }
 
 div.gallery:hover {
@@ -160,3 +167,54 @@ color: lime;
   top: 420px;
   background-color: #FFAA4B; 
 }
+
+@media only screen and (max-width: 600px) {
+  .header{
+    display: table-row;
+    align-items: center;
+    
+  }
+
+  .logo img{
+    width: 100% ;
+    height: auto;
+  }
+  
+  .login{
+    float: left;
+    width: 50%;
+    justify-content: center;
+  }
+  
+  .searchbar{
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 20px ;
+  }
+  .searchbar i{
+    width: 5%;
+  }
+  
+  .searchbar input{
+    width: 90%;
+  }
+  
+  .register{
+  float: right;
+  display: inline;
+  width: 50%;
+  }
+
+  .sidenav{
+    display: none;
+  }
+
+  div.gallery {
+    width: 40%;
+  }
+
+}
+
+
+
