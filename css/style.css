@@ -7,8 +7,9 @@ body{
 input.search-query {
   background-color:black;
   color:white;
-  width: 50%;
-  margin: 5%;
+  width: 600px;
+  margin: 10px;
+  font-size: 23px;
 }
 
 input{
