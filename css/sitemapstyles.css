@@ -1,0 +1,165 @@
+body{
+    background-color: black;
+    color: white;
+    font-family: Arial;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  a{
+    text-decoration: none;
+    color:white;
+  }
+  
+  a:hover{
+    color:red;
+    transition: 0.5s;
+  }
+
+  #mySidenav a {
+    position: absolute; 
+    right: -40px; 
+    transition: 0.3s; 
+    padding: 10px; 
+    width: 60px; 
+    text-decoration: none; 
+    font-size: 15px;
+    color: white; 
+    border-radius: 5px 0 0 5px; 
+    font-family: arial;
+    text-align: left;
+  }
+  
+  #mySidenav a:hover{
+      color: black;
+  }
+  
+  #side1 {
+    top: 120px;
+    background-color: #4CAF50;
+  }
+  
+  #side2 {
+    top: 180px;
+    background-color: #2196F3; 
+  }
+  
+  #side3 {
+    top: 240px;
+    background-color: #f44336; 
+  }
+  
+  #side4 {
+    top: 300px;
+    background-color: #974BFF; 
+  }
+
+header{
+      display: inline-flex;
+      align-items: center;
+      justify-items: center;
+}
+
+.logo{
+    width: 20%;
+    margin-left: 20%;
+}
+.logo img{
+    width: 100%;
+    height: auto;
+}
+
+.pageTitle{
+    width: 40%;
+    color: linen;
+    align-items: center;
+    margin-left: 20%;
+}
+
+.pageTitle h1{
+    text-align: justify;
+    font-size: 35px;
+    color: aqua;
+}
+main{
+    display: grid;
+}
+
+.content{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.content h2 a{
+    color:red;
+}
+
+.content ul {
+    list-style-type: disc;
+    color: lime;
+}
+
+.content ul li{
+    margin-bottom: 15px;
+}
+
+.content ul li a:hover{
+    font-size: large;
+    color: lime;
+}
+
+@media only screen and (max-width: 860px) {
+    .logo{
+        width: 50%;
+        margin-left: 0%;
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .pageTitle{
+        width: 50%;
+        color: linen;
+        align-items: left;
+        margin-left: 0%;
+    }
+    
+    .pageTitle h1{
+        text-align: center;
+        font-size: 35px;
+        color: aqua;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .header{
+        display: table-row;
+        align-items: center;
+      }
+
+    .logo{
+        width: 100%;
+    }
+    .logo img{
+        width: 100%;
+        height: auto;
+        margin-left: 0px;
+        margin-bottom: 0%;
+    }
+    
+    .pageTitle{
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .pageTitle h1{
+        text-align: center;
+        font-size: 35px;
+        color: aqua;
+    }
+
+    .sidenav{
+        display: none;
+    }
+}
