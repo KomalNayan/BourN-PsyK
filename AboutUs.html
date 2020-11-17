@@ -4,109 +4,89 @@
         <title>About Us</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <!--link rel="stylesheet" type="text/css" href="./css/style.css"-->
         <link rel="icon" href="./images/bnpk icon.PNG" type="image/png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <style>
             .container{
-                display: grid;
                 width: 100%;
             }
-            .container a img{
+
+            .container img{
                 width: 100%;
                 height: auto;
             }
-            .content{
-                display: inline;
+
+            * {
+            box-sizing: border-box;
             }
-            div.gallery {
-             margin: 10px;
-                float: left;
-                width: 180px;
-                }
 
-                div.gallery:hover {
-                color:lime;
-                transition-duration: 0.4s;
-                background-color:black;
-                font-size: large;
-                
-                }
+            .column {
+            float: left;
+            width: 29.5%;
+            padding: 10px;
+            height: 300px;
+            margin: 1.8%; 
+            }
+            
+            .column h2{
+                color:  white;
+                text-align: left;
+            }
+            hr{
+                color: red;
+                background-color: red;
+            }
 
-                div.gallery img:hover{
-                width:100%;
-                filter: grayscale(0);
-                filter: brightness(100%);
-                }
+            .column p{
+                color: white;
+                text-align: justify;
+            }
 
-                div.gallery img {
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            body{
+                background-color: black;
+                color: white;
+                font-family: Arial;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+
+ 
+            @media screen and (max-width: 600px) {
+            .column {
                 width: 90%;
-                height: auto;
                 margin: 5%;
-                border-radius: 50%;
-                filter: grayscale(100%);
-                transition: 0.4s ease-in-out;
-                }
 
-                div.desc {
-                padding: 15px;
-                text-align: center;
-                }
-
+            }
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <a href="index.html"><img src="./images/bourn psyk logo.JPEG" alt="logo"/></a>
         </div>
-        <div class="container">
-            <div class="content">
-                <h2>What We Are</h2>
-                <p>
-                    The Ultimate Platform for different kinds & genres of videos available for free to everyone.
-                </p>
+        <div class="row">
+            <div class="column" style="background-color:#000;">
+              <h2>What We Are</h2>
+              <hr>
+              <p>Some text..</p>
             </div>
-            <div class="content">
-                <h2>Why We Are</h2>
-                <p>
-                    In contrast to various websites & platforms that provide their services and streams to people by monetizing accounts,
-                    We took the initiative to provide the 'ALL YOU NEED' platform to stream videos for free.
-                </p>
+            <div class="column" style="background-color:#000;">
+              <h2>Why We Are</h2>
+              <hr>
+              <p>Some text..</p>
             </div>
-            <div class="content">
-                <h2>Who We Are</h2>
-                <p>
-                    A team of fantastic four that worked together to setup, design & build the platform 'BourN PsyK'.
-                </p>
+            <div class="column" style="background-color:#000;">
+              <h2>Who We Are</h2>
+              <hr>
+              <p>Some text..</p>
             </div>
-        </div>
-        <div class="container">
-            <div class="content">
-                <div class="gallery">
-                    <a target="_blank" href="https://youtu.be/kJQP7kiw5Fk">
-                    <img src="./images/Despacito.jpg" alt="Despacito" >
-                    </a>
-                <div class="desc">Komal Nayan Galla</div>
-                </div>
-                <div class="gallery">
-                    <a target="_blank" href="https://youtu.be/dlFA0Zq1k2A">
-                    <img src="./images/silhouette.jpg" alt="Silhouette" width="150" height="150">
-                    </a>
-                    <div class="desc">Priyanka Nandibhatla</div>
-                </div>
-                <div class="gallery">
-                    <a target="_blank" href="https://youtu.be/LsoLEjrDogU">
-                    <img src="./images/Finesse.png" alt="Finesse" width="150" height="150">
-                    </a>
-                    <div class="desc">Bhavya Vasam</div>
-                </div>
-                <div class="gallery">
-                    <a target="_blank" href="https://youtu.be/O669LKM6XDQ">
-                    <img src="./images/Win.jpg" alt="Win" width="150" height="150">
-                    </a>
-                    <div class="desc">Nithin Vanamamalai</div>
-                </div>
-            </div>
-        </div>
+          </div>
     </body>
 </html>
