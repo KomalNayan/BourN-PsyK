@@ -29,41 +29,29 @@
             margin: 1.8%; 
             }
 
-            .columnX {
+            div.gallery {
+            margin: 2.4%;
             float: left;
             width: 20%;
-            padding: 10px;
-            height: auto;
-            margin: 1.8%; 
-            align-items: center;
-            justify-items: center;
-            display: grid;
             transition: 0.4s ease-in-out;
+            filter: grayscale(100%);
             }
 
-            .columnX img{
-                border-radius: 50%;
-                filter: grayscale(100%);
-                width:90%;
-                height: auto;
-                transition: 0.4s ease-in-out;
+            div.gallery:hover {
+            color:red;
+            filter:grayscale(0);
             }
 
-            .columnX img:hover{
-                filter: grayscale(0);
-                width:100%;
-                height: auto;
+            div.gallery img {
+            width: 90%;
+            border-radius: 50%;
+            height: auto;
+            padding: auto;
             }
 
-            .columnX p:hover{
-                color: lawngreen;
-                font-size: large;
-            }
-
-            .columnX p{
-                padding: 15px;
-                transition: 0.4s ease-in-out;
-                text-align: center;
+            div.desc {
+            padding: 5%;
+            text-align: center;
             }
             
             .column h2{
@@ -73,6 +61,7 @@
             hr{
                 border: 2px solid red;
             }
+
             .column p{
                 color: white;
                 text-align: justify;
@@ -96,10 +85,10 @@
              color:white;
             }
 
-a:hover{
-  color:red;
-  transition: 0.5s;
-}
+            a:hover{
+            color:red;
+            transition: 0.5s;
+            }
  
             @media screen and (max-width: 600px) {
             .column {
@@ -108,9 +97,9 @@ a:hover{
 
             }
 
-            .columnX{
-                width: 50%;
-                margin: auto;
+            div.gallery {
+                width: 40%;
+                margin: 5%;
             }
             }
         </style>
@@ -144,28 +133,33 @@ a:hover{
              </p>
             </div>
           </div>
-
-          <div class="row" id="creators">
-              <div class="columnX">
-                <a href="https://www.instagram.com/saiyan_nayan/" target="_blank">
-                    <img src="./images/Komal Nayan.jpeg" alt="Ace" height="150" width="150"/>
-                    <p>Komal Nayan Galla</p>
-                </a>
-              </div>
-              <div class="columnX">
-                <img src="./images/silhouette.jpg" alt="Priyanka" height="150" width="150"/>
-                <p>Priyanka Nandibhatla</p>
-              </div>
-             <div class="columnX">
-              <img src="./images/Finesse.png" alt="Bhavya" height="150" width="150"/>
-                <p>Bhavya Vasam</p>
-            </div>
-            <div class="columnX">
-                <img src="./images/Ghungroo.jpg" alt="Nithin" height="150" width="150"/>
-                <p>Nithin Vanamamalai</p>
-            </div>
-            </div>
-            <footer id="footer">
+        <div id="creators" class="content">
+          <div class="gallery">
+            <a target="_blank" href="https://www.instagram.com/saiyan_nayan/">
+            <img src="./images/Komal Nayan.jpeg" alt="Komal" >
+            </a>
+        <div class="desc">Komal Nayan</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://youtu.be/dlFA0Zq1k2A">
+            <img src="./images/silhouette.jpg" alt="Priyanka" >
+            </a>
+            <div class="desc">Priyanka Nandibhatla</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://youtu.be/LsoLEjrDogU">
+            <img src="./images/Finesse.png" alt="Finesse" >
+            </a>
+            <div class="desc">Bhavya Vasam</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://youtu.be/O669LKM6XDQ">
+            <img src="./images/Win.jpg" alt="Win" >
+            </a>
+            <div class="desc">Nithin Bharadwaj</div>
+        </div>
+    </div>
+            <footer id="footer" style="display:grid;width: 100%;">
                 <p>
                     <a href="#top">To Top&nbsp;<i class="fa fa-arrow-up" aria-hidden="true" color="red"></i></a>
                 </p>  
