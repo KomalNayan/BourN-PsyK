@@ -25,19 +25,54 @@
             float: left;
             width: 29.5%;
             padding: 10px;
-            height: 300px;
+            height: auto;
             margin: 1.8%; 
+            }
+
+            .columnX {
+            float: left;
+            width: 20%;
+            padding: 10px;
+            height: auto;
+            margin: 1.8%; 
+            align-items: center;
+            justify-items: center;
+            display: grid;
+            transition: 0.4s ease-in-out;
+            }
+
+            .columnX img{
+                border-radius: 50%;
+                filter: grayscale(100%);
+                width:90%;
+                height: auto;
+                transition: 0.4s ease-in-out;
+            }
+
+            .columnX img:hover{
+                filter: grayscale(0);
+                width:100%;
+                height: auto;
+            }
+
+            .columnX p:hover{
+                color: lawngreen;
+                font-size: large;
+            }
+
+            .columnX p{
+                padding: 15px;
+                transition: 0.4s ease-in-out;
+                text-align: center;
             }
             
             .column h2{
-                color:  white;
+                color:  yellow;
                 text-align: left;
             }
             hr{
-                color: red;
-                background-color: red;
+                border: 2px solid red;
             }
-
             .column p{
                 color: white;
                 text-align: justify;
@@ -56,7 +91,15 @@
                 overflow-x: hidden;
                 overflow-y: scroll;
             }
+            a{
+             text-decoration: none;
+             color:white;
+            }
 
+a:hover{
+  color:red;
+  transition: 0.5s;
+}
  
             @media screen and (max-width: 600px) {
             .column {
@@ -64,29 +107,71 @@
                 margin: 5%;
 
             }
+
+            .columnX{
+                width: 50%;
+                margin: auto;
+            }
             }
         </style>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="#top">
             <a href="index.html"><img src="./images/bourn psyk logo.JPEG" alt="logo"/></a>
         </div>
         <div class="row">
-            <div class="column" style="background-color:#000;">
+            <div class="column" style="background-color:#000;" id="what">
               <h2>What We Are</h2>
               <hr>
-              <p>Some text..</p>
+              <p>A <span style="color: aqua; font-weight: bold;">FREE FOR ALL</span> Platform for streaming your favourite videos
+                and also monitor your progress and your friend's favourites for unlimited fun. All you need to do is register & recommend :)
+              </p>
             </div>
-            <div class="column" style="background-color:#000;">
+            <div class="column" style="background-color:#000;" id="why">
               <h2>Why We Are</h2>
               <hr>
-              <p>Some text..</p>
+              <p>Not all people can afford for an account in popular streaming sites like Netflix, Amazon Prime, etc. 
+                 People are desperate for a free platform to stream their favourite videos. We heard you! 
+                 <span style="color: aqua; font-weight: bold;">BourN PsyK</span> is the answer to all your hopes. Hope you love it. 
+              </p>
             </div>
-            <div class="column" style="background-color:#000;">
+            <div class="column" style="background-color:#000;" id="who">
               <h2>Who We Are</h2>
               <hr>
-              <p>Some text..</p>
+              <p>The <span style="color: hotpink; font-weight: bold;">Fantastic Four</span> that honed their skills to heed to your prayers. 
+                The Effort, Skill, Expertise, Love poured into the beautiful recipe of <span style="color: aqua; font-weight: bold;">BourN PsyK</span>.
+                Scroll Down for more details..
+             </p>
             </div>
           </div>
+
+          <div class="row" id="creators">
+              <div class="columnX">
+                <a href="https://www.instagram.com/saiyan_nayan/" target="_blank">
+                    <img src="./images/Komal Nayan.jpeg" alt="Ace" height="150" width="150"/>
+                    <p>Komal Nayan</p>
+                </a>
+              </div>
+              <div class="columnX">
+                <img src="./images/silhouette.jpg" alt="Priyanka" height="150" width="150"/>
+                <p>Priyanka Nandibhatla</p>
+              </div>
+             <div class="columnX">
+              <img src="./images/Finesse.png" alt="Bhavya" height="150" width="150"/>
+                <p>Bhavya Vasam</p>
+            </div>
+            <div class="columnX">
+                <img src="./images/Ghungroo.jpg" alt="Nithin" height="150" width="150"/>
+                <p>Nithin Vanamamalai</p>
+            </div>
+            </div>
+            <footer id="footer">
+                <p>
+                    <a href="#top">To Top&nbsp;<i class="fa fa-arrow-up" aria-hidden="true" color="red"></i></a>
+                </p>  
+                <p>&copy; BourN PsyK Pvt. Ltd.</p>
+                <p><a href="tel:+1-819-6226-185">Contact : <span style="color:yellow;">+1-819-6226-185</span></a></p>
+                <p><a href="mailto:yagami_light@zoho.com">E-mail :  <span style="color:yellow;">yagami_light@zoho.com</span></a></p>
+            </footer>
     </body>
 </html>
