@@ -161,6 +161,7 @@ color: lime;
   background-color: #FFAA4B; 
 }
 
+
 @media only screen and (max-width: 600px) {
   .header{
     display: table-row;
