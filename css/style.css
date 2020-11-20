@@ -166,7 +166,11 @@ color: lime;
   .header{
     display: table-row;
     align-items: center;
-    
+  }
+
+  td{
+    text-align: center;
+    padding-right: 20px;
   }
 
   .logo img{
