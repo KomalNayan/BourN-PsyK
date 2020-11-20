@@ -1,15 +1,142 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>BourN PsyK - Register</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="./css/style.css">
-        <link rel="icon" href="./images/bnpk icon.PNG" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
 
-    <body>
-        <h1>Registration Page..! Coming Soon</h1>
-    </body>
-</html>
+<html lang = "en">
+
+<head>
+    <title>BourN PsyK Registration</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./images/bnpk icon.PNG" type="image/png">
+    <style>
+        h1{
+            color:aqua;
+        }
+        sup{
+            color:red;
+            font-size: 15px;
+        }
+        form{
+            display:inline-block;
+            box-sizing: border-box;
+            background-color:black;
+            align-items:center;
+            padding:0.5em;
+        }
+        body{
+            background-color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        a{
+            text-decoration: none;
+            color: red;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover{
+            color: lime;
+        }
+        .container{
+            color:yellow;
+            line-height:1.5;
+            padding:20px;
+            text-align: left;
+        }
+       
+        input[type="text"],[type="password"],[type="date"],[type="email"]{
+            width:100%;
+            height: 20px;
+            border: 1px solid #000;
+            margin:8px 6px;
+            padding:7px;
+            display:inline-block;
+            color:white;
+            background-color: black;
+        }
+
+        input {
+    background-color:black;
+    color:white;
+    margin: 10px;
+    font-size: 15px;
+    border: black;
+    transition: 0.4s;
+  }
+
+  input[type="date"]{
+    background-color: black;
+    color:white;
+    font-family: arial;
+  }
+
+  ::-webkit-calendar-picker-indicator { background-color: white; }
+
+  
+  input:focus{
+    border-bottom: 2px solid red;
+    outline: none;
+  }
+
+ 
+
+        .registerbtn{
+        background-color: green;
+        color:white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        transition: 0.3s ease-in-out;
+        font-size: 18px;
+        }
+
+        .registerbtn:hover{
+            background-color: black;
+            border: 2px dashed white;
+            color: aqua;
+            font-size: 20px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <form action="action_page.php" method="POST" autocomplete="off">
+        <h1><b>BourN PsyK Registration</b></h1>
+        
+        <div class="container">
+            
+          <label><b>First Name</b></label><sup>*</sup>
+          <input type="text" placeholder="Enter First Name" required/><br>
+
+          <label><b>Last Name</b></label><sup>*</sup>
+          <input type="text" placeholder="Enter Last Name" required/><br>
+
+          <label><b>Birth Date</b></label><sup>*</sup>
+          <input type="date" required><br>
+
+          <label><b>Gender</b></label><sup>*</sup><br>
+          <input type="radio" name="gender" value="male" checked><span style="color: white;">Male
+          <input type="radio" name="gender" value="female">Female
+          <input type="radio" name="gender" value="others">Other </span><br>
+          
+          <label><b>Email Address</b></label><sup>*</sup>
+          <input type="email" placeholder="Enter Email" required/><br>
+
+          <label><b>Username</b></label><sup>*</sup>
+          <input type="text" placeholder="Enter Username" name="username" required><br>
+          <label><b>Password</b></label><sup>*</sup>
+          <input type="password" placeholder="Enter password" name="pwd" required><br>
+          <label><b>Confirm Password</b></label><sup>*</sup>
+          <input type="password" placeholder="Confirm password" name="pwd" required><br>
+          <p style="color: white; font-size: 10px;text-align: center;">All fields labeled with * are required</p>
+          <input type="checkbox">
+          <label style="color: white;">I Accept the <a href="terms.pdf" target="_blank">Terms and Conditions</a></label><br>
+
+          <Button type="submit" class="registerbtn">Register</Button>
+    </div>
+    </form>
+</body>
