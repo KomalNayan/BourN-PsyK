@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <title>Registration form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            color:white;
+        }
+        form{
+            display:inline-block;
+            box-sizing: border-box;
+            background-color:black;
+            align-items:center;
+            padding:0.5em;
+        }
+        body{
+            padding-top: 20px;
+            background-color:black;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+        .container{
+            color:red;
+            line-height:1.5;
+            padding:20px;
+            text-align: left;
+        }
+       
+        input[type="text"],[type="password"],[type="date"]{
+            width:100%;
+            height: 20px;
+            border: 1px solid #000;
+            margin:8px 6px;
+            padding:7px;
+            display:inline-block;
+        }
+        .registerbtn{
+        background-color: green;
+        color:white;
+        padding: 16px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+        }
+
+    </style>
+</head>
+
+<body>
+   
+    <form action="action_page.php" method="post">
+        <h1><b>REGISTER</b></h1>
+        
+        <div class="container">
+            
+          <label><b>First Name</b></label>
+          <input type="text" placeholder="Enter FirstName" required/><br>
+
+          <label><b>Last Name</b></label>
+          <input type="text" placeholder="Enter Last Name" required/><br>
+
+          <label><b>Birth Date</b></label>
+          <input type="date" placeholder="Enter Birth Date" required><br>
+
+          <label><b>Gender</b></label><br>
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="female">Female
+          <input type="radio" name="gender" value="others">Others <br><br>
+          
+          <label><b>Email Address</b></label>
+          <input type="text" placeholder="Enter Email" required/><br>
+
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter username" name="username"><br>
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter password" name="pwd"><br>
+          <label><b>confirm password</b></label>
+          <input type="password" placeholder="Confirm password" name="pwd"><br>
+
+          <p>By Creating an account you accept our terms and conditions<a href='#'>Terms and conditions</a></p><br>
+          <input type="checkbox">
+          <label><b>I Accept the terms and conditions</b></label><br>
+
+          <Button type="submit" class="registerbtn">Register</Button>
+    </div>
+    </form>
+</body>
