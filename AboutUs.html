@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>About Us</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--link rel="stylesheet" type="text/css" href="./css/style.css"-->
+        <link rel="icon" href="./images/bnpk icon.PNG" type="image/png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .container{
+                width: 100%;
+            }
+
+            .container img{
+                width: 100%;
+                height: auto;
+            }
+
+            * {
+            box-sizing: border-box;
+            }
+
+            .column {
+            float: left;
+            width: 29.5%;
+            padding: 10px;
+            height: auto;
+            margin: 1.8%; 
+            }
+
+            div.gallery {
+            margin: 2.4%;
+            float: left;
+            width: 20%;
+            transition: 0.4s ease-in-out;
+            filter: grayscale(100%);
+            }
+
+            div.gallery:hover {
+            color:red;
+            filter:grayscale(0);
+            }
+
+            div.gallery img {
+            width: 90%;
+            border-radius: 50%;
+            height: auto;
+            padding: auto;
+            }
+
+            div.desc {
+            padding: 5%;
+            text-align: center;
+            }
+            
+            .column h2{
+                color:  yellow;
+                text-align: left;
+            }
+            hr{
+                border: 2px solid red;
+            }
+
+            .column p{
+                color: white;
+                text-align: justify;
+            }
+
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            body{
+                background-color: black;
+                color: white;
+                font-family: Arial;
+                overflow-x: hidden;
+                overflow-y: scroll;
+            }
+            a{
+             text-decoration: none;
+             color:white;
+            }
+
+            a:hover{
+            color:red;
+            transition: 0.5s;
+            }
+ 
+            @media screen and (max-width: 800px) {
+            .column {
+                width: 90%;
+                margin: 5%;
+
+            }
+
+            div.gallery {
+                width: 40%;
+                margin: 5%;
+            }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" id="#top">
+            <a href="index.html"><img src="./images/bourn psyk logo.JPEG" alt="logo"/></a>
+        </div>
+        <div class="row">
+            <div class="column" style="background-color:#000;" id="what">
+              <h2>What We Are!</h2>
+              <hr>
+              <p>A <span style="color: aqua; font-weight: bold;">FREE FOR ALL</span> Platform for streaming your favourite videos
+                and also monitor your progress and your friend's favourites for unlimited fun. All you need to do is register & recommend :)
+              </p>
+            </div>
+            <div class="column" style="background-color:#000;" id="why">
+              <h2>Why We Are!</h2>
+              <hr>
+              <p>Not all people can afford for an account in popular streaming sites like Netflix, Amazon Prime, etc. 
+                 People are desperate for a free platform to stream their favourite videos. We heard you! 
+                 <span style="color: aqua; font-weight: bold;">BourN PsyK</span> is the answer to all your hopes. Hope you love it. 
+              </p>
+            </div>
+            <div class="column" style="background-color:#000;" id="who">
+              <h2>Who We Are!</h2>
+              <hr>
+              <p>The <span style="color: hotpink; font-weight: bold;">Fantastic Four</span> that honed their skills to heed to your prayers. 
+                The Effort, Skill, Expertise, Love poured into the beautiful recipe of <span style="color: aqua; font-weight: bold;">BourN PsyK</span>.
+                Scroll Down for more details..
+             </p>
+            </div>
+          </div>
+        <div id="creators" class="content">
+          <div class="gallery">
+            <a target="_blank" href="https://www.instagram.com/saiyan_nayan/">
+            <img src="./images/Komal Nayan.jpeg" alt="Komal" >
+            </a>
+        <div class="desc">Komal Nayan</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.instagram.com/priyankavattem">
+            <img src="./images/priyanka.jpg" alt="Priyanka" >
+            </a>
+            <div class="desc">Priyanka Nandibhatla</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.instagram.com/vasambhavya/">
+            <img src="./images/Bhavya.jpg" alt="Bhavya" >
+            </a>
+            <div class="desc">Bhavya Vasam</div>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="https://www.instagram.com/nithinbharadwaj2/">
+            <img src="./images/Nithin.JPG" alt="Nithin" >
+            </a>
+            <div class="desc">Nithin Bharadwaj</div>
+        </div>
+    </div>
+            <footer id="footer" style="display:grid;width: 100%;">
+                <p>
+                    <a href="#top">To Top&nbsp;<i class="fa fa-arrow-up" aria-hidden="true" color="yellow"></i></a>
+                </p>  
+                <p>&copy; BourN PsyK Pvt.Ltd.</p>
+                <p><a href="tel:+1-819-6226-185">Contact : <span style="color:yellow;">+1-819-6226-185</span></a></p>
+                <p><a href="mailto:yagami_light@zoho.com">E-mail :  <span style="color:yellow;">yagami_light@zoho.com</span></a></p>
+            </footer>
+    </body>
+</html>
