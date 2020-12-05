@@ -1,3 +1,3 @@
 # BourN-PsyK
-Sample Streaming Page
-BNPK (BourN PsyK): https://komalnayan.github.io/BourN-PsyK/
+
+BNPK (BourN PsyK) Deployed Link: https://komalnayan.github.io/BourN-PsyK/
